@@ -1,0 +1,18 @@
+error: no GL/gl.h
+
+I change the header to gl.h, the header works now, but the link has errors as:
+
+Undefined symbols for architecture x86_64:
+  "_XCheckIfEvent", referenced from:
+      _spnav_remove_events in libfreeglut_static.a(freeglut_spaceball.o)
+  "_XCloseDisplay", referenced from:
+      _fgDeinitialize in libfreeglut_static.a(freeglut_init.o)
+  "_XCreateBitmapFromData", referenced from:
+      _getEmptyCursor in libfreeglut_static.a(freeglut_cursor.o)
+  "_XCreateColormap", referenced from:
+      _fgOpenWindow in libfreeglut_static.a(freeglut_window.o)
+  "_XCreateFontCursor", referenced from:
+      _fgSetCursor in libfreeglut_static.a(freeglut_cursor.o)
+  "_XCreatePixmapCursor", referenced from:
+
+
